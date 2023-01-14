@@ -1,4 +1,5 @@
 #! /bin/sh
+sed -i "s/{{theme}}/$(echo ${THEME})/g" index.html
 sed -i "s/{{title}}/$(echo ${TITLE})/g" index.html
 sed -i "s/{{heading_title}}/$(echo ${HEADING_TITLE})/g" index.html
 sed -i "s/{{message}}/$(echo ${MESSAGE})/g" index.html

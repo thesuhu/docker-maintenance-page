@@ -47,11 +47,10 @@
 	<script type="text/javascript">
 		function applyTheme() {
 			var themeType = "{{theme}}";
-			if (themeType === "Dark") {
+			if (themeType.toLocaleLowerCase() === "dark") {
 				document.body.style.backgroundColor = "#2a2e35";
 				document.body.style.color = "#b2becd";
-			}
-			if (themeType === "Light") {
+			} else {
 				document.body.style.backgroundColor = "white";
 				document.body.style.color = "black";
 			}
