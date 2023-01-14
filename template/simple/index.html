@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>{{title}}</title>
+	<link rel="icon" type="image/png" sizes="16x16"
+		href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABbklEQVR4nI2RTSuEURiGrymFKBsLVtjYKDtrWUwsyDnkY2PBRP6BxZQfYGEv05wXiawU2cgf8JmdWIyPOUc2CmUhzaM5ZsZbeOd96mzuzn0997kPxBwJ0GJQce/7ESEh6zTIJs0SIP7s0Og1IUG1EcOsGF7EcFcBBOQk4FUMU3EAhyXTqWRoE0O7BJx5zbBXHbBDvRgKkmUmBE2J4VMMdXESpD0gIBPSsiVt6U+T1SSdYi6v6BTDcuXthhN/frrY+hPgNBdOI06xKCs0ScC4BPSFQJOyxqBs0Bo29VhNzml2raZQBFjFm1XsO83N/ZjvYkMM28Vv/L1Vcei3fm9ezStmnOIspM1HlvUwSrfVvFjFcVl7HKLDJ9EcXA9QGwl4GqPFaZ7/AexJLzWRAKs4qsTVZOwwKac4L2t5zXQ0YIR+p3h3isuyySo+ij1YxW2xxEiAj5ykQSDhNFel4tJlvao5PPkRJqxm4XGUrjiGL8/B9WzSqQPhAAAAAElFTkSuQmCC" />
+	<style>
+		body {
+			text-align: center;
+			padding: 20px;
+		}
+
+		@media (min-width: 768px) {
+			body {
+				padding-top: 100px;
+			}
+		}
+
+		h1 {
+			font-size: 50px;
+		}
+
+		body {
+			font: 20px Helvetica, sans-serif;
+			color: #333;
+		}
+
+		article {
+			display: block;
+			text-align: left;
+			max-width: 650px;
+			margin: 0 auto;
+		}
+
+		a {
+			color: #dc8100;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: #333;
+			text-decoration: none;
+		}
+	</style>
+	<script type="text/javascript">
+		function applyTheme() {
+			var themeType = "{{theme}}";
+			if (themeType === "Dark") {
+				document.body.style.backgroundColor = "#2a2e35";
+				document.body.style.color = "#b2becd";
+			}
+			if (themeType === "Light") {
+				document.body.style.backgroundColor = "white";
+				document.body.style.color = "black";
+			}
+		}
+		window.onload = function () {
+			applyTheme();
+		};
+	</script>
+</head>
+
+<body>
+	<article>
+		<h1>{{heading_title}}</h1>
+		<div>
+			<p>{{message}}</p>
+			<p>&mdash;{{team_name}}</p>
+		</div>
+	</article>
+</body>
+
+</html>
